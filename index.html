@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minionsgame</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Minions Game</h1>
+    <div id="start-screen">
+        <p>ช่วยมินเนี่ยนเก็บกล้วยและหลบสิ่งกีดขวางกันเถอะ!</p>
+        <button id="start-btn" onclick="startGame()">Start Game</button>
+    </div>
+
+    <!-- ส่วนของเกม (จะถูกเปิดขึ้นมาเมื่อกด Start Game) -->
+    <div id="game-container" style="display: none; position: relative; width: 800px; margin: 0 auto;">
+        <div id="game-stage" style="position: relative; width: 800px; height: 300px;">
+            <canvas id="board"></canvas>
+        </div>
+        <br>
+        <button onclick="restartGame()">Restart Game</button>
+    </div>
+<div id="blue-bg-minions"></div>
+
+    
+
+<script src="script.js"></script>
+</body>
+</html>
